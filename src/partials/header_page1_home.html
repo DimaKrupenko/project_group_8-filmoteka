@@ -24,10 +24,10 @@
       <nav class="header-navigations">
         <ul class="header-navigations__list">
           <li class="header-navigations__item is-active">
-            <a class="header-navigations__link" href="#">home</a>
+            <a class="header-navigations__link" href="#">Home</a>
           </li>
           <li class="header-navigations__item">
-            <a class="header-navigations__link" href="#">my library</a>
+            <a class="header-navigations__link" href="#">My library</a>
           </li>
         </ul>
       </nav>
@@ -36,10 +36,14 @@
       <form class="heaer-searchform__form">
         <input
           class="header-searchform__input"
+          id="search"
           type="text"
+          name="search"
           autocomplete="off"
           placeholder="Movie search"
+          required
         />
+
         <button class="header-searchform__button is-hidden" type="submit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +57,7 @@
             />
           </svg>
         </button>
+
       </form>
     </div>
     <p class="header__warning-text is-hidden">
